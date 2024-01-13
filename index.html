@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Work+Sans&display=swap" rel="stylesheet">
+    <title>AFPA</title>
+</head>
+<body>
+    <!-- ############################### -->
+    <!-- ##### Barre de navigation ##### -->
+    <!-- ############################### -->
+
+    <nav class="navbar">
+        <img src="img/logo_afpa_2.png" alt="logo AFPA" class="logo"/>
+        <div class="menu_mobile">
+            <ul class="liens_menu">
+                <li><a href="index.html" class="lien">Accueil</a></li>
+                <li><a href="formation.html" class="lien">Formation</a></li>
+                <li><a href="temoignages.html" class="lien">Témoignages</a></li>
+                <li><a href="references.html" class="lien">Références</a></li>
+                <li><a href="contact.html" class="lien">Contact</a></li>
+            </ul>
+            <img src="img/croix_close.png" alt="fermer le menu" class="croix_close" onclick="closeMenu()"/>
+        </div>
+        <img src="img/menu_hamburger.png" alt="menu hamburger" class="menu_hamburger" onclick="openMenu()"/>
+    </nav>
+
+    <!-- ################################ -->
+    <!-- ##### Carte page d'accueil ##### -->
+    <!-- ################################ -->
+
+    <div class="carte_accueil">
+        <h1>Devenez développeur Web</h1>
+        <p>Une formation gratuite et remunérée pour les demandeurs d'emploi.</p>
+        <a href="formation.html">Je découvre la formation</a>
+    </div>
+
+    <!-- ################################## -->
+    <!-- ##### Script pour navigation ##### -->
+    <!-- ################################## -->
+
+    <script>
+        function openMenu(){
+            document.querySelector('.liens_menu').classList.add('open');
+            document.querySelector('.croix_close').classList.add('open');
+        }
+
+        function closeMenu(){
+            document.querySelector('.liens_menu').classList.remove('open');
+            document.querySelector('.croix_close').classList.remove('open');
+        }
+    </script>
+
+</body>
+</html>

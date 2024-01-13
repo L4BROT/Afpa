@@ -1,0 +1,93 @@
+/* ################################# */
+/* ##### Formulaire de contact ##### */
+/* ################################# */
+
+form{
+    width: 400px;
+    padding: 20px;
+    border: solid black 2px;
+    border-radius: 20px;
+    background-color: white 1;
+    backdrop-filter: blur(65px);
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    margin: 20px auto;
+}
+
+form fieldset{
+    margin: 20px 0;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+form #name, #firstname, #tel, #email{
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+form #name:hover, #firstname:hover, #tel:hover, #email:hover{
+    box-shadow: 5px 5px 5px green;
+}
+
+select{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+}
+
+select:hover{
+    background-color: rgb(186, 186, 186);
+}
+
+.boutons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.boutons *{
+    margin: 0 10px;
+    padding: 5px 20px;
+}
+
+.envoyer{
+    border: none;
+    border-radius: 5px;
+}
+
+.annuler{
+    border: none;
+    border-radius: 5px;
+}
+
+.envoyer:hover{
+    background-color: rgb(186, 186, 186);
+}
+
+.annuler:hover{
+    background-color: rgb(186, 186, 186);
+}
+
+legend{
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* ##### Version mobile 680px et moins ##### */
+
+@media screen and (max-width: 680px) {
+    form{
+        width: 90%;
+    }
+}

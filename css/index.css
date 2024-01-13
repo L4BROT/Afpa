@@ -1,0 +1,81 @@
+/* ################################ */
+/* ##### Carte page d'accueil ##### */
+/* ################################ */
+
+.carte_accueil{
+    border: solid black 2px;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    border-radius: 20px;
+    background-color: white 1;
+    backdrop-filter: blur(65px);
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.carte_accueil h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+.carte_accueil p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.carte_accueil a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    background-color: rgb(39, 160, 92);
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.carte_accueil a:hover{
+    background-color: rgb(27, 120, 68);
+}
+
+/* ##### Version tablette 1000px et moins ##### */
+
+@media screen and (max-width: 1000px) {
+    .carte_accueil h1{
+        font-size: 3.5em;
+    }
+
+    .carte_accueil p{
+        font-size: 2em;
+    }
+
+    .carte_accueil a{
+        font-size: 1.5em;
+    }
+}
+
+/* ##### Version mobile 680px et moins ##### */
+
+@media screen and (max-width: 680px) {
+    .carte_accueil h1{
+        font-size: 2.6em;
+    }
+
+    .carte_accueil p{
+        font-size: 1.6em;
+    }
+
+    .carte_accueil a{
+        font-size: 1.2em;
+    }
+
+    .carte_accueil{
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+}

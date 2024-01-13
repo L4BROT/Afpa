@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Work+Sans&display=swap" rel="stylesheet">
+    <title>AFPA</title>
+</head>
+<body>
+    <!-- ############################### -->
+    <!-- ##### Barre de navigation ##### -->
+    <!-- ############################### -->
+    <nav class="navbar">
+        <img src="img/logo_afpa_2.png" alt="logo AFPA" class="logo"/>
+        <div class="menu_mobile">
+            <ul class="liens_menu">
+                <li><a href="index.html" class="lien">Accueil</a></li>
+                <li><a href="formation.html" class="lien">Formation</a></li>
+                <li><a href="temoignages.html" class="lien">Témoignages</a></li>
+                <li><a href="references.html" class="lien">Références</a></li>
+                <li><a href="contact.html" class="lien">Contact</a></li>
+            </ul>
+            <img src="img/croix_close.png" alt="fermer le menu" class="croix_close" onclick="closeMenu()"/>
+        </div>
+        <img src="img/menu_hamburger.png" alt="menu hamburger" class="menu_hamburger" onclick="openMenu()"/>
+    </nav>
+
+    <!-- ################################# -->
+    <!-- ##### Formulaire de contact ##### -->
+    <!-- ################################# -->
+
+    <form>
+        <h1>Formulaire de contact</h1>
+
+        <input type="text" name="name" id="name" required="required" placeholder="Nom" /><br />
+        <input type="text" name="firstname" id="firstname" required="required" placeholder="Prénom"/><br />
+        <input type="tel" name="tel" id="tel" pattern="[0-9]{10}" maxlength="10" placeholder="Téléphone"/><br />
+        <input type="email" name="email" id="email" required="required" placeholder="Email"/><br />
+
+        <fieldset>
+            <legend>Situation :</legend>
+            <input type="radio" id="demandeur" name="situation" value="demandeur" checked="checked" />
+            <label for="demandeur"> Demandeur d'emploi</label><br>
+            <input type="radio" id="transit" name="situation" value="transit" />
+            <label for="transit"> Salarié en transition professionnelle</label><br>
+            <input type="radio" id="autre" name="situation" value="autre" />
+            <label for="autre"> Autre</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Modalités d'apprentissage :</legend>
+            <input type="radio" id="centre" name="modalite" value="centre" checked="checked" />
+            <label for="centre"> En centre de formation (présentiel)</label><br>
+            <input type="radio" id="distance" name="modalite" value="distance" />
+            <label for="distance"> 100% à distance</label><br>
+            <input type="radio" id="alternance" name="modalite" value="alternance" />
+            <label for="alternance"> Contrat d'alternance avec l'entreprise</label><br>
+            <input type="radio" id="sans" name="modalite" value="sans" />
+            <label for="sans"> Sans préférences</label>
+        </fieldset>
+
+        <select name="region" id="region">
+            <option value="1">Auvergne-Rhône-Alpes</option>
+            <option value="2">Bourgogne-Franche-Comté</option>
+            <option value="3">Bretagne</option>
+            <option value="4">Centre-Val de Loire</option>
+            <option value="5">Corse</option>
+            <option value="6">Grand Est</option>
+            <option value="7">Hauts-de-France</option>
+            <option value="8">Île-de-France</option>
+            <option value="9">Normandie</option>
+            <option value="10">Nouvelle-Aquitaine</option>
+            <option value="11">Occitanie</option>
+            <option value="12">Pays de la Loire</option>
+            <option value="13">Provence-Alpes-Côte d'Azur</option>
+        </select>
+
+        <div class="boutons">
+            <input type="submit" value="Envoyer" class="envoyer"/>
+            <input type="reset" value="Annuler" class="annuler"/>
+        </div>
+    </form>
+
+    <!-- ################################## -->
+    <!-- ##### Script pour navigation ##### -->
+    <!-- ################################## -->
+
+    <script>
+        function openMenu(){
+            document.querySelector('.liens_menu').classList.add('open');
+            document.querySelector('.croix_close').classList.add('open');
+        }
+
+        function closeMenu(){
+            document.querySelector('.liens_menu').classList.remove('open');
+            document.querySelector('.croix_close').classList.remove('open');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/formation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Work+Sans&display=swap" rel="stylesheet">
+    <title>AFPA</title>
+</head>
+<body>
+    <!-- ############################### -->
+    <!-- ##### Barre de navigation ##### -->
+    <!-- ############################### -->
+    <nav class="navbar">
+        <img src="img/logo_afpa_2.png" alt="logo AFPA" class="logo"/>
+        <div class="menu_mobile">
+            <ul class="liens_menu">
+                <li><a href="index.html" class="lien">Accueil</a></li>
+                <li><a href="formation.html" class="lien">Formation</a></li>
+                <li><a href="temoignages.html" class="lien">Témoignages</a></li>
+                <li><a href="references.html" class="lien">Références</a></li>
+                <li><a href="contact.html" class="lien">Contact</a></li>
+            </ul>
+            <img src="img/croix_close.png" alt="fermer le menu" class="croix_close" onclick="closeMenu()"/>
+        </div>
+        <img src="img/menu_hamburger.png" alt="menu hamburger" class="menu_hamburger" onclick="openMenu()"/>
+    </nav>
+
+    <!-- ################################# -->
+    <!-- ##### Cartes page formation ##### -->
+    <!-- ################################# -->
+
+    <div class="carte_formation">
+        <h1>Formation Développeur Web</h1>
+        <div class="deuxcolonnes">
+            <section class="colonne">
+                <div>
+                    <h2>Pédagogie</h2>
+                    <p>Notre pédagogie privilégie la pratique en limitant les apports théoriques au strict nécessaire.<br>
+                        Nous favorisons l'apprentissage par l'actoin et proposons des activités  proches de situations
+                        professionnelles.<br>Nous créons un environnement propice à l'apprentissage par confrontation entre
+                        pairs et privilégions le travail de groupe.
+                    </p>
+                </div>
+                <div>
+                    <h2>Modalités d'apprentissage</h2>
+                    <p>Selon les établissements et la formule retenue :<br>
+                        100 % présentiel en établissement de formation.<br>
+                        100 % à distance.<br>
+                        Alternance avec des périodes en entreprise et en centre de formation.
+                    </p>
+                </div>
+                <div>
+                    <h2>Durée</h2>
+                    <p>8 mois environs (1 190 heures).</p>
+                </div>
+                <div>
+                    <h2>Qualification</h2>
+                    <p>Titre professionnel de niveau 5 (BTS/DUT) de développeur/se Web et Web mobile.</p>
+                </div>
+            </section>
+
+            <section class="colonne2">
+                <div>
+                    <h2>Admission</h2>
+                    <p>Prérequis<br>
+                        Être titulaire du baccalauréat ou équivalent, de préférence scientifique ou technologique.<br>
+                        Pratique courante de l'ordinateur, des smartphones et tablettes tactiles ainsi que de leurs
+                        outils.<br>
+                        Pratique de l'anglais à l'oral et à l'écrit (lire, comprendre des textes courts, poser des<br>
+                        questions simples sans trop d'hésitation et exprimer ses opinions).
+                    </p>
+                </div>
+                <div>
+                    <h2>Accés à la formation</h2>
+                    <p>Dossier de demande de formation - Tests et Entretien.</p>
+                </div>
+                <div>
+                    <h2>Le métier</h2>
+                    <p>Le développeur web / la développeuse réalise l'ensemble des fonctionnalités techniques<br>
+                        d'un site ou d'une application web. Il conçoit des sites sur mesure ou adapte des solutions<br>
+                        techniques existantes en fonction du projet et de la demande du client.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ################################## -->
+    <!-- ##### Script pour navigation ##### -->
+    <!-- ################################## -->
+
+    <script>
+        function openMenu(){
+            document.querySelector('.liens_menu').classList.add('open');
+            document.querySelector('.croix_close').classList.add('open');
+        }
+
+        function closeMenu(){
+            document.querySelector('.liens_menu').classList.remove('open');
+            document.querySelector('.croix_close').classList.remove('open');
+        }
+    </script>
+
+</body>
+</html>

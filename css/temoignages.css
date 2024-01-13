@@ -1,0 +1,88 @@
+/* ############################## */
+/* ##### Cartes témoignages ##### */
+/* ############################## */
+
+
+.fond{
+    margin: 20px;
+    border-radius: 20px;
+    border: solid black 2px;
+    background-color: white 1;
+    backdrop-filter: blur(65px);
+    padding: 10px;
+}
+
+.temoignages img{
+    width: 120px;
+    border-radius: 5px;
+}
+
+.temoignages h2{
+    margin-left: 20px;
+}
+
+.temoignages h3{
+    margin: 20px 0;
+}
+
+.temoignages p{
+    text-align: justify;
+}
+
+.temoignages{
+    width: 450px;
+    background-color: rgb(171, 171, 171);
+    margin: 20px;
+    border: solid black 2px;
+    border-radius: 20px;
+    padding: 20px;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+}
+
+section div *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.troiscartes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* ##### Version tablette 1120px et moins ##### */
+
+@media screen and (max-width: 1120px) {
+    
+    .temoignages{
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .troiscartes{
+        display: block;
+        width: 100%;
+    }
+
+    body{
+        background-size: cover;
+    }
+}
+
+/* ##### Version mobile 680px et moins ##### */
+
+@media screen and (max-width: 680px) {
+    h1{
+        font-size: 1.5em;
+    }
+}
